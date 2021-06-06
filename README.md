@@ -1,2 +1,1 @@
 # simplilearn-phpinfo
-New updates
