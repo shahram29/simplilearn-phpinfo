@@ -1,0 +1,9 @@
+services:
+  phpinfo:
+    deploy:
+      mode: replicated
+      placemnet: 
+        constraints: 
+          - node.role == worker
+      replicas: 2
+    image:   
