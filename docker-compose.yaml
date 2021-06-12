@@ -2,8 +2,11 @@ services:
   phpinfo:
     deploy:
       mode: replicated
-      placemnet: 
-        constraints: 
+      placement:
+        constraints:
           - node.role == worker
       replicas: 2
-    image:   
+    image: index.docker.io/svaziri/mycentos:latest
+    ports:
+      - 80:8080
+version: '3.8'
